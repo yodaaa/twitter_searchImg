@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+  </head>
+  <body>
+    <% @data.each do |url|%>
+      <% url.each_value { |value|%>
+          <a href="<%= value %>"><img src ="<%= value %>" /></a>
+      <% } %>
+    <% end %>
+    
+  </body>
+</html>
